@@ -1,0 +1,26 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="DateTimePicker"
+run/main_scene="res://Control.tscn"
+
+[autoload]
+
+Tools="*res://utils/Tools.gd"
+
+[locale]
+
+translations=PoolStringArray( "res://material/translation/translation.en.translation", "res://material/translation/translation.zh.translation" )
+
+[physics]
+
+common/enable_pause_aware_picking=true
